@@ -1,0 +1,13 @@
+<?php
+
+include(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'thsplitlib/segment.php');
+
+function thai_index_search_preprocess($text) {
+  // Do processing on $text]
+	 $segment = new Segment();
+            //echo '<hr/>';
+     $result = $segment->get_segment_array($text);
+     $text = implode(' | ', $result);
+      dsm($text);
+  return $text;
+}
