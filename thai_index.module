@@ -8,6 +8,6 @@ function thai_index_search_preprocess($text) {
             //echo '<hr/>';
      $result = $segment->get_segment_array($text);
      $text = implode(' | ', $result);
-      dsm($text);
+      //dsm($text);
   return $text;
 }
